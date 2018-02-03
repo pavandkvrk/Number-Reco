@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8D37BCD82022CA2D0027C1C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37BCD72022CA2D0027C1C2 /* AppDelegate.swift */; };
-		8D37BCDA2022CA2D0027C1C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37BCD92022CA2D0027C1C2 /* ViewController.swift */; };
+		8D37BCDA2022CA2D0027C1C2 /* DrawingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37BCD92022CA2D0027C1C2 /* DrawingVC.swift */; };
 		8D37BCDD2022CA2E0027C1C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D37BCDB2022CA2E0027C1C2 /* Main.storyboard */; };
 		8D37BCDF2022CA2E0027C1C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D37BCDE2022CA2E0027C1C2 /* Assets.xcassets */; };
 		8D37BCE22022CA2E0027C1C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D37BCE02022CA2E0027C1C2 /* LaunchScreen.storyboard */; };
 		8D37BCED2022CA2E0027C1C2 /* Number_RecoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37BCEC2022CA2E0027C1C2 /* Number_RecoTests.swift */; };
 		8D37BCF82022CA2E0027C1C2 /* Number_RecoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37BCF72022CA2E0027C1C2 /* Number_RecoUITests.swift */; };
+		8D37BD052022D1890027C1C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D37BCDB2022CA2E0027C1C2 /* Main.storyboard */; };
+		8D7B0FDA202556F100C53246 /* num_rec_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FD9202556F100C53246 /* num_rec_1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		8D37BCD42022CA2D0027C1C2 /* Number Reco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Reco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D37BCD72022CA2D0027C1C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D37BCD92022CA2D0027C1C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D37BCD92022CA2D0027C1C2 /* DrawingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingVC.swift; sourceTree = "<group>"; };
 		8D37BCDC2022CA2E0027C1C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D37BCDE2022CA2E0027C1C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D37BCE12022CA2E0027C1C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		8D37BCF32022CA2E0027C1C2 /* Number RecoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Number RecoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D37BCF72022CA2E0027C1C2 /* Number_RecoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number_RecoUITests.swift; sourceTree = "<group>"; };
 		8D37BCF92022CA2F0027C1C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D7B0FD42023DA4C00C53246 /* Number Reco.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Number Reco.entitlements"; sourceTree = "<group>"; };
+		8D7B0FD9202556F100C53246 /* num_rec_1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = num_rec_1.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,11 @@
 		8D37BCD62022CA2D0027C1C2 /* Number Reco */ = {
 			isa = PBXGroup;
 			children = (
+				8D7B0FD42023DA4C00C53246 /* Number Reco.entitlements */,
 				8D37BCD72022CA2D0027C1C2 /* AppDelegate.swift */,
-				8D37BCD92022CA2D0027C1C2 /* ViewController.swift */,
+				8D37BCD92022CA2D0027C1C2 /* DrawingVC.swift */,
 				8D37BCDB2022CA2E0027C1C2 /* Main.storyboard */,
+				8D7B0FD9202556F100C53246 /* num_rec_1.mlmodel */,
 				8D37BCDE2022CA2E0027C1C2 /* Assets.xcassets */,
 				8D37BCE02022CA2E0027C1C2 /* LaunchScreen.storyboard */,
 				8D37BCE32022CA2E0027C1C2 /* Info.plist */,
@@ -194,6 +200,11 @@
 					8D37BCD32022CA2D0027C1C2 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					8D37BCE72022CA2E0027C1C2 = {
 						CreatedOnToolsVersion = 9.2;
@@ -249,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D37BD052022D1890027C1C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D37BCDA2022CA2D0027C1C2 /* ViewController.swift in Sources */,
+				8D37BCDA2022CA2D0027C1C2 /* DrawingVC.swift in Sources */,
+				8D7B0FDA202556F100C53246 /* num_rec_1.mlmodel in Sources */,
 				8D37BCD82022CA2D0027C1C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
